@@ -5,5 +5,7 @@ const app = firebaseAdmin.initializeApp({
 })
 
 const db = app.firestore()
-
-module.exports = db;
+const auth = firebaseAdmin.auth();
+module.exports = {
+    db, auth
+};
